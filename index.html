@@ -2,15 +2,58 @@
 <html lang="en-ca">
   <head>
     <title>Assignment 3 - Personal Webpage Design and Implementation</title>
- 
-  <style>
-   
-    body{
-        background-color: #FDE2F1;
-        max-width: 1200px
+
+    <style>
+      body {
+        background-color: #ffffff;
+        max-width: 1200px;
+        margin: 0;
       }
-    
-     .container {
+
+
+      nav {
+        background-color: #f7dce8;
+        padding: 15px;
+        text-align: center;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      ul li {
+        display: inline-block;
+        margin-right: 14px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      ul li a:hover {
+        color: blue;
+      }
+      
+      .contact-button {
+        background-color: #e9f7ff;
+        padding: 4px 8px;
+        border-radius: 6px;
+      }
+      
+      .about-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 30px;
+        gap: 20px;
+      }
+
+      .about-page {
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 20px;
@@ -20,22 +63,39 @@
 
       .grid-item {
         min-height: 150px;
-        background-color: gray;
       }
 
       img {
         width: 100%;
       }
-    
-  </style>
-    
-     </head>
-  
+    </style>
+
+  </head>
+
   <body>
-     <div class="container">
+    <nav>
+      <ul>
+        <li><a href="/">Charmed Rosalyn</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Products</a></li>
+        <li><a href="/">Customs</a></li>
+        <li><a href="/">Events</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="about-page">
       <div class="grid-item">
-        <img src="sanrio_bracelet.png" alt="picture of a yummy banh mi">
-       </div>
+        <img src="sanrio_bracelet.png" alt="picture of someone wearing a few sanrio themed bracelets">
+      </div>
+      <div class="about-text">
+      <h2>About Us</h2>
+      <p>Charmed Rosalyn is a small jewelry business that focuses on creating cute custom jewelry at an affordable price. We also create cute stickers such as our bubble tea series, various types of jewelry and accessories including bracelets, necklaces, beaded rings, key chains, phone charms, earrings, etc.
+      </p>
+    </div>
+    </div>
+
   </body>
-    
+
 </html>
