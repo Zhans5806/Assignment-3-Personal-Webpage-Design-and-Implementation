@@ -7,7 +7,7 @@
       body {
         background-color: #ffffff;
         max-width: 1200px;
-        margin: 0;
+        margin: 0 auto;
       }
 
       nav {
@@ -122,6 +122,14 @@
         gap: 20px;
       }
 
+      .about-text {
+          grid-column: 2;
+      }
+
+      .customs-container > .grid-item {
+          grid-column: 1;
+      }
+
       .step h3 {
         font-family: "Georgia", serif;
         font-size: 28px;
@@ -206,25 +214,25 @@
         <li><a href="#contact" class="contact-button">Contact</a></li>
 
       </ul>
-
     </nav>
 
-    <div id="home">
+<!-- Home -->
+    <section id="home">
       <div class="home">
         <div class="grid-item">
           <img src="sanrio_bracelet.png" alt="picture of someone wearing a few sanrio themed bracelets">
         </div>
-      </div>
-    </div>
 
     <div class="home-text">
       <h2>About Us</h2>
       <p>Charmed Rosalyn is a small jewelry business that focuses on creating cute custom jewelry at an affordable price. We also create cute stickers such as our bubble tea series, various types of jewelry and accessories including bracelets, necklaces, beaded rings, key chains, phone charms, earrings, etc. </p>
     </div>
+      </div>
 
     <div class="reviews">
       Customer Reviews
-      <br><br>
+      <br>
+      <br>
       COMING SOON
     </div>
 
@@ -238,20 +246,19 @@
       <img src="Sanrio_bracelet3.JPG" alt="picture of green kerropi themed bracelets">
       <img src="Sanrio_bracelet2.JPG" alt="picture of blue beaded cinnamoroll themed bracelets">
     </div>
+    </section>
 
-
+<!-- Products -->
+    <section id="products">
     <div class="instagram">
       <h3>Products</h3>
     </div>
 
-    <div id="products">
       <div class="products">
         <div class="product-item">
           <img src="Bracelet.png" alt="Bracelet">
           <p class="product-label">Bracelet</p>
         </div>
-      </div>
-    </div>
 
     <div class="product-item">
       <img src="Necklace.png" alt="Necklace">
@@ -277,9 +284,12 @@
       <img src="Themed.png" alt="Themed Bracelets">
       <p class="product-label">Themed</p>
     </div>
+    </div>
+  </section>
 
-    /*Customs*/
-    <div class="customs" id="customs">
+<!-- Customs -->
+    <section id="customs">
+    <div class="customs">
       <div class="grid-item">
         <img src="sanrio_bracelet.png" alt="picture of someone wearing a few sanrio themed bracelets">
       </div>
@@ -288,16 +298,15 @@
         <h2>Customs</h2>
         <p>Creating cute custom jewelry at an affordable price is key for our small business. Whether you want bracelets, necklaces, or even earrings, just follow the steps below and they’ll come to life.</p>
       </div>
+    </div>
 
-
-      <div class="steps-section" id="steps">
+      <div class="steps-section">
         <div class="step">
           <h3>Step 1:</h3>
           <div class="step-box blue-box">
             <p>Connect with us on Instagram or email</p>
           </div>
         </div>
-      </div>
 
       <div class="step">
         <h3>Step 2:</h3>
@@ -306,6 +315,7 @@
         </div>
       </div>
 
+
       <div class="step">
         <h3>Step 3:</h3>
         <div class="step-box blue-box">
@@ -313,8 +323,9 @@
         </div>
       </div>
     </div>
+  </section>
 
-    /*Event*/
+<!-- Events -->
     <div class="event-section" id="events">
       <div class="event-image">
         <img src="event_poster.png" alt="Event poster">
@@ -330,7 +341,7 @@
       </div>
     </div>
 
-    /*Footer*/
+<!-- Footer -->
     <div class="footer" id="contact">
       <div>
         <h3>Contact us</h3>
@@ -346,6 +357,6 @@
       <div>
         <img src="Charmed Rosalyn Logo.png" alt="pink round Charmed Rosalyn logo">
       </div>
-    </div>
+      </div>
   </body>
 </html>
